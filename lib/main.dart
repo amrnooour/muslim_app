@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:muslim_app/ui/home/home_screen.dart';
+import 'package:muslim_app/ui/screens/details_screen/details_screen.dart';
 import 'package:muslim_app/ui/screens/splash_screen/splash_screen.dart';
 
 void main() {
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         SplashScreen.routeName :(_)=>SplashScreen(),
-        HomeScreen.routeName :(_)=>HomeScreen()
+        HomeScreen.routeName :(_)=>HomeScreen(),
+        DetailsScreen.routeName :(_)=> DetailsScreen(),
       },
       initialRoute: SplashScreen.routeName,
     );
