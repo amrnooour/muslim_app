@@ -5,6 +5,7 @@ import 'package:muslim_app/ui/utils/app_assets.dart';
 import 'package:muslim_app/ui/utils/app_colors.dart';
 import 'package:muslim_app/ui/utils/app_theme.dart';
 import 'package:muslim_app/ui/utils/constants.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class HadethTab extends StatelessWidget {
   List<String> ahadethTab = List.generate(50, (index) {
@@ -20,7 +21,7 @@ class HadethTab extends StatelessWidget {
             flex: 3,
             child: Image.asset(AppAssets.logoHadeth)),
         Divider(thickness: 3,color: AppColors.primary,),
-        Center(child: Text("Hadeth Name",style: AppTheme.quranTabTitleTextStyle)),
+        Center(child: Text(AppLocalizations.of(context)!.hadethName,style: Theme.of(context).textTheme.displayMedium)),
         Divider(thickness: 3,color: AppColors.primary,),
         Expanded(
           flex: 7,
@@ -34,9 +35,8 @@ class HadethTab extends StatelessWidget {
                           fileName: "h${index+1}.txt",
                           isQuranFile: false));
                     },
-                    child: Text(ahadethTab[index],textAlign: TextAlign.center,style: AppTheme.quranTabTitleTextStyle.copyWith(
-                        fontWeight: FontWeight.normal
-                    ),));
+                    child: Text(ahadethTab[index],textAlign: TextAlign.center,style: Theme.of(context).textTheme.displayMedium
+                    ),);
               }),
         )
       ],);

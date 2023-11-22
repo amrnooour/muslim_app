@@ -5,6 +5,7 @@ import 'package:muslim_app/ui/utils/app_assets.dart';
 import 'package:muslim_app/ui/utils/app_colors.dart';
 import 'package:muslim_app/ui/utils/app_theme.dart';
 import 'package:muslim_app/ui/utils/constants.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class QuranTab extends StatelessWidget {
   const QuranTab({Key? key}) : super(key: key);
@@ -17,9 +18,9 @@ class QuranTab extends StatelessWidget {
       Expanded(
           flex: 3,
           child: Image.asset(AppAssets.logoQuran)),
-        Divider(thickness: 3,color: AppColors.primary,),
-        Center(child: Text("Sura Name",style: AppTheme.quranTabTitleTextStyle)),
-        Divider(thickness: 3,color: AppColors.primary,),
+        Divider(),
+        Center(child: Text(AppLocalizations.of(context)!.suraName,style: Theme.of(context).textTheme.displayMedium)),
+        Divider(),
         Expanded(
           flex: 7,
           child: ListView.builder(
@@ -32,9 +33,8 @@ class QuranTab extends StatelessWidget {
                           fileName: "${index+1}.txt",
                           isQuranFile: true));
                     },
-                    child: Text(Constants.suraNames[index],textAlign: TextAlign.center,style: AppTheme.quranTabTitleTextStyle.copyWith(
-                      fontWeight: FontWeight.normal
-                    ),));
+                    child: Text(Constants.suraNames[index],textAlign: TextAlign.center,style: Theme.of(context).textTheme.displayMedium
+                    ),);
               }),
         )
       ],);
