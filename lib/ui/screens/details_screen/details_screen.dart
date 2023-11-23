@@ -50,7 +50,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
    fileContent = file;
    List<String> fileLines =fileContent.split("\n");
    for(int i =0 ;i < fileLines.length;i++){
-     fileLines[i] += arguments.isQuranFile ? "(${i+1})" : " ";
+     fileLines[i] += arguments.isQuranFile ? "(${i+1})" : "  ";
    }
    fileContent = fileLines.join();
    setState(() {

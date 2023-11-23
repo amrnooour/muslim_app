@@ -9,7 +9,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class HadethTab extends StatelessWidget {
   List<String> ahadethTab = List.generate(50, (index) {
-    return " ${index+1}الحديث رقم " ;
+    return " الحديث رقم ${index+1} " ;
   });
 
   @override

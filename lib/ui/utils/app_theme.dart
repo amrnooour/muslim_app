@@ -61,8 +61,9 @@ abstract class AppTheme{
           bodySmall: settingsOptionTitle.copyWith(color: AppColors.white),
           bodyMedium: settingsTabTitle.copyWith(color: AppColors.white),
           displayMedium: quranTabTitleTextStyle.copyWith(color: AppColors.white),
-        bodyLarge: GoogleFonts.elMessiri(fontWeight: FontWeight.w600,fontSize: 25,color: AppColors.white),
-          displaySmall: GoogleFonts.inter(fontWeight: FontWeight.w400,fontSize: 25,color: AppColors.accent)
+          bodyLarge: GoogleFonts.elMessiri(fontWeight: FontWeight.w600,fontSize: 25,color: AppColors.white),
+          displaySmall: GoogleFonts.inter(fontWeight: FontWeight.w400,fontSize: 25,color: AppColors.accent),
+
 
 
       )
