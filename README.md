@@ -1,16 +1,23 @@
-# muslim_app
+# 📘 Overview
 
-A new Flutter project.
+![q2](https://github.com/user-attachments/assets/069083bb-6afa-4165-92bd-c0eb1c153d5a)
+![q1](https://github.com/user-attachments/assets/51526dbf-57b7-4076-91b7-fcf382864f28)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## About this App
 
-A few resources to get you started if this is your first Flutter project:
+ Developed and designed an android and iOS application that contains all the verses of the
+Quran and some hadiths in addition to praise •In addition to changing the language from Arabic to English
+•Add night mode
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## The technology used 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+• provider as a state managemaent
+• mvvm as a design arc
+• http package to handle api request
+
+
+
+
+
+
